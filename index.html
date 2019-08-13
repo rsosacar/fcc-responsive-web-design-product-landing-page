@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto&display=swap" rel="stylesheet">
+    	<style type="text/css">
+            html {
+                font-family: 'Roboto', sans-serif;
+            }
+
+            a {
+                margin: 5px 10px 5px 10px;
+                text-decoration: none; 
+            }
+
+            header {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                background-color: white;
+                padding-top: 20px;
+                z-index: 3000;
+            }
+
+            footer {
+                 text-align: center;
+                 font-size: 11px;
+            }
+
+            h1 {
+                text-align: center;
+                font-family: 'Permanent Marker';
+            }
+
+            h2 {
+                font-family: 'Permanent Marker';
+            }
+
+            #header-img {
+                width: 100px;
+            }
+
+            #img-div {
+                grid-area: image_div;
+                background-color: whote;
+            }
+
+            #content {
+                margin-top: 120px;
+                max-width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .section {
+                margin-bottom: 20px;
+            }
+
+            #services {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            .service {
+                border-radius: 3px;
+                border: 1px solid black;
+                padding: 20px;
+                margin: 20px;
+                max-width: 90%;
+                text-align: center;
+
+            }
+
+            .service h3 p {
+                text-align: center;
+            }
+
+            .service h3 {
+                font-family: 'Permanent Marker';
+            }
+
+            .service button {
+                margin: auto;
+            }
+
+            button, input[type="submit"] {
+                position: relative;
+                vertical-align: top;
+                font-size: 18px;
+                color: white;
+                text-align: center;
+                text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+                background: #00bfa5;
+                border: 0;
+                border-bottom: 2px solid #00bfa5;
+                cursor: pointer;
+                -webkit-box-shadow: inset 0 -2px #00bfa5;
+                box-shadow: inset 0 -2px #00bfa5;
+                padding: 10px;
+                border-radius: 3px;
+            }
+
+            button,input[type="submit"]:active {
+                top: 1px;
+                outline: none;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+            }
+
+            .service img {
+                max-width: 90px;
+                height: auto; 
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+ 
+            .center_div {
+                text-align: center;
+            }
+
+            input[type="email"] {
+                width: 100%;
+                max-width: 300px;
+                height: 37px;
+                margin-bottom: 10px;
+            }
+
+            @media (min-width: 960px){
+                header {
+                    flex-direction: row;
+                    justify-content: space-around;
+                }
+
+                #services {
+                    flex-direction: row;
+                    justify-content: space-around;
+                }
+
+                .service {
+                    width: 200px;
+                    margin: auto;
+                }
+
+                input[type="email"] {
+                    width: 100%;
+                    max-width: 300px;
+                    height: 37px;
+                    margin-right: 10px;
+                }
+            }
+    	</style>
+  	</head>
+  	<body>
+    	<main id="main">
+            <header id="header">
+                <img src="images/logo_rs.png" id="header-img" alt="RS's Logo">
+                <nav id="nav-bar">
+                    <a href="#services-section" id="services-link" class="nav-link">Services</a>
+                    <a href="#thinking-section" id="thinking-link" class="nav-link">Thinking Process</a>
+                    <a href="#contact-section" id="contact-link" class="nav-link">Contact Us</a> 
+                </nav>
+            </header>
+            <div id="content">
+                <h1>RS Web Solutions</h1>
+        		<section id="services-section" class="section">
+                    <h2>Our Services</h2>
+                    <div id="services">
+                        <div class="service">
+                            <img src="images/sketch.png" id="design-img" width="90px" alt="Design">
+                            <h3>Design</h3>
+                            <p>We design your webpage according to the latest tendencies and according to your needs.</p>
+                            <button>Hire this service</button>
+                        </div>
+                        <div class="service">
+                            <img src="images/development.png" id="dev-img" width="90px" alt="Development">
+                            <h3>Development</h3>
+                            <p>Do you have an idea for a new system? we can make it real! We develop for you and the world.</p>
+                            <button>Hire this service</button>
+                        </div>
+                        <div class="service">
+                            <img src="images/maintenance.png" id="maintenance-img" width="90px" alt="Maintenance">
+                            <h3>Maintenance</h3>
+                            <p>No time to take care fo your new webpage or system? Don't worry we do it for you. We give you support 24/7.</p>
+                            <button>Hire this service</button>
+                        </div>
+                    </div>
+                </section>
+                <section id="thinking-section" class="section">
+                    <h2>Web Development Process</h2>
+                    <p>We take your idea and study it. After that we develop a new plan in order to make it real, always according to the latest tendencies in the market.</p>
+                    <div class="center_div">
+                        <iframe id="video" height="321" src="https://www.youtube.com/embed/uKoYxFduzaQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </section>
+                <section id="contact-section" class="section">
+                    <h2>Wanna know more?</h2>
+                    <div class="center_div">
+                        <form id="form" action="https://www.freecodecamp.com/email-submit">
+                            <input type="email" name="email" id="email" placeholder="Please, enter your email address">
+                            <input type="submit" name="submit" id="submit" value="I want to know more!">
+                        </form>
+                    </div>
+                </section>
+            </div>
+            <footer id="footer">
+                Copyleft <script>document.write(new Date().getFullYear());</script> Made by Rina S.
+            </footer>
+    	</main>
+  	</body>
+</html>
